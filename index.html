@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón deslizante con cuadro de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="contenedor">
+    <button id="botonPrincipal" class="boton-estilizado" onclick="mostrarCuadroTexto()">Inicio</button>
+    <div id="cuadroTextoContainer" style="display:none; margin-top: 10px;">
+        <input type="text" id="cuadroTexto" placeholder="Escribe aquí">
+        <button id="guardarBoton" class="boton-estilizado" onclick="guardarTexto()">Guardar</button>
+    </div>
+    <div id="comentarios" style="margin-top: 20px; width: 100%; max-width: 400px;">
+        <h3>Comentarios:</h3>
+        <ul id="listaComentarios"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
